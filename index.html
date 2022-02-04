@@ -6,6 +6,7 @@
   
   <script src="Log.js"></script>
   <script src="Box.js"></script>
+  <script src="BoxR.js"></script>
   
 </head>
 
@@ -22,12 +23,14 @@
     <!--This message will be printed in console.-->
     <a-entity log="message: Hi this is costomise message"></a-entity>
 
-    <a-entity move-box="moveX:" position="10 2 0" rotation="10 0 0" >
-    <a-box></a-box>
+
+    <!--Box with rot.-->
+    <a-entity  position="0 2 0"  rot-box>
+      <a-box></a-box>
     </a-entity>
 
-    <a-entity position="-10 -2 0"  move-box>
-
+    <!--Box with pos. and rot.-->
+    <a-entity position="0 -2 0"  move-box>
       <a-box></a-box>
     </a-entity>
 
